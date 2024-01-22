@@ -1,0 +1,69 @@
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  direction: rtl;
+  font-family: 'Iranian Sans', sans-serif;
+}
+body {
+  background-color: #e8e6f893;
+}
+
+:root {
+  /* fonts */
+  --fs-200: clamp(0.78rem, calc(0.71rem + 0.35vw), 0.96rem);
+  --fs-300: clamp(0.94rem, calc(0.84rem + 0.51vw), 1.2rem);
+  --fs-400: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.5rem);
+  --fs-500: clamp(1.94rem, calc(1.56rem + 1.92vw), 2.93rem);
+  --fs-600: clamp(2.8rem, calc(2.11rem + 3.47vw), 4.58rem);
+  --lh-1: 1;
+  --lh-1-1: 1.1;
+  --lh-1-4: 1.4;
+
+  /* colors */
+  --accent: 183 74% 44%;
+}
+.budget {
+  --backdrop: var(--accent);
+  border: 3px solid hsl(var(--backdrop));
+  color: hsl(var(--backdrop));
+}
+
+.budge-item {
+  background-color: hsl(var(--backdrop));
+  outline-color: hsl(var(--backdrop));
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+
+}
+progress[value]::-webkit-progress-bar {
+  background-color: rgba(128, 128, 128, 0.236);
+ 
+}
+progress[value]::-webkit-progress-value {
+  background-color:  hsl(var(--backdrop));
+  
+  background-size: 20px 15px, 100% 100%, 100% 100%;
+}
+
+.nth:nth-child(odd){
+background-color: #FAE7F3;
+}
+
+.bg-expense-name{
+  background-color:  hsl(var(--backdrop));
+}
+
+td{
+  padding:0.5rem;
+ 
+}
+
+.btn-delete-budget{
+  background-color: hsl(var(--backdrop));
+}
