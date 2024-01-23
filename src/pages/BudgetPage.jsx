@@ -5,7 +5,7 @@ import { useLoaderData } from 'react-router-dom';
 
 // library
 import { toast } from 'react-toastify';
-import { PieChart } from '@mui/x-charts/PieChart';
+
 
 // components
 import AddExpenseForm from '../components/AddExpenseForm';
@@ -107,26 +107,6 @@ const BudgetPage = () => {
             <Table expenses={expenses} showBudget={false} />
           </div>
 
-          <div>
-            <PieChart
-              series={[
-                {
-                  data: expensesInArr,
-                },
-              ]}
-              width={400}
-              height={400}
-            />
-          </div>
-        </div>
-      )}
-
-      {/* mui */}
-
-      {/* {expenses.length > 0 && ( */}
-
-      {/* )} */}
-    </div>
   );
 };
 export default BudgetPage;
