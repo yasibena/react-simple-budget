@@ -99,7 +99,7 @@ const BudgetPage = () => {
         <AddExpenseForm budgets={[budget]} />
       </div>
       {expenses && expenses.length > 0 && (
-        <div className="flex justify-around max-lg:block max-lg:m-auto ">
+        <div className="block  justify-around  ">
           <div>
             <h2 className=" accent text-2xl font-bold  my-5">
               <span>مبالغ خرج شده از {budget.name}</span>
@@ -107,6 +107,16 @@ const BudgetPage = () => {
             <Table expenses={expenses} showBudget={false} />
           </div>
 
+       
+        </div>
+      )}
+
+      {/* mui */}
+
+      {/* {expenses.length > 0 && ( */}
+
+      {/* )} */}
+    </div>
   );
 };
 export default BudgetPage;
