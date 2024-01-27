@@ -54,7 +54,7 @@ export async function dashboardAction({ request }) {
         name: values.newBudget,
         amount: values.newBudgetAmount,
       });
-      return toast.success('Budget created!');
+      return toast.success(درآمد مورد نظر اضافه شد!');
     } catch (e) {
       throw new Error('هنگام اضافه کردن درآمد شما مشکلی پیش آمد.');
     }
